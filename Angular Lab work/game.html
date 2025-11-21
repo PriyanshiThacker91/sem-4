@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click the Image Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        #game-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #image {
+            position: absolute;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        #score {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="score">Score: 0</div>
+    <div id="game-container">
+        <img id="image" src="https://via.placeholder.com/100" alt="Click me!">
+    </div>
+
+    <script>
+        // Initialize the score
+        let score = 0;
+
+        // Get the image element and score display element
+        const image = document.getElementById('image');
+        const scoreDisplay = document.getElementById('score');
+
+        // Function to generate a random position
+        function getRandomPosition() {
+            const container = document.getElementById('game-container');
+            const containerWidth = container.clientWidth;
+            const containerHeight = container.clientHeight;
+
+            // Get random positions within the container
+            const randomX = Math.floor(Math.random() * (containerWidth - 100)); // Image width is 100px
+            const randomY = Math.floor(Math.random() * (containerHeight - 100)); // Image height is 100px
+
+            return { x: randomX, y: randomY };
+        }
+
+        // Function to update the position of the image
+        function moveImage() {
+            const { x, y } = getRandomPosition();
+
+            // Set the new position for the image
+            image.style.left = `${x}px`;
+            image.style.top = `${y}px`;
+        }
+
+        // Event listener for image click
+        image.addEventListener('click', () => {
+            // Increment the score
+            score++;
+
+            // Update the score display
+            scoreDisplay.textContent = `Score: ${score}`;
+
+            // Move the image to a new random position
+            moveImage();
+        });
+
+        // Initial image position
+        moveImage();
+    </script>
+
+</body>
+</html>

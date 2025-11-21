@@ -1,0 +1,63 @@
+<!-- hello world
+{{stuName}}
+{{number}}
+<button [disabled]="isdisable">ClickMe</button>    
+{{rollno | json}}
+{{date| date:'dd/MM/yy'}}
+{{date | date:'hh:mm:ss'}}
+{{spi|number:'2.2-3'}}
+{{object | json}} -->
+
+
+<!-- <p>{{title}}</p>
+<p>{{ }}</p>
+<p>Today's date:{{today | date:'fullDate'}}</p>
+<p>Formated_amount:{{amount| currency: 'INR'}}</p>
+<p>Uppercase:{{name | uppercase}}</p>
+<p>Lowercase:{{name | lowercase}}</p>
+<p>Titlecase:{{name | titlecase}}</p>
+<p>Decimal:{{amount | number:'8.0-2'}}</p>
+<p>Decimal:{{amount | number:'1.0-8'}}</p>
+<p>Percent:{{0.78 |percent}}</p>
+<p>Json:{{obj | json}}</p>
+<p>Slice:{{name | slice:1.7}}</p> -->
+
+<!-- <p>Hello world</p>
+<p>{{stuName}}</p>
+<p>{{number}}</p>
+<button [disabled]="isdisable">ClickMe</button>
+<p>{{rollno | json}}</p>
+<p>{{date | date: 'dd/MM/yy'}}</p>
+<p>{{date | date: 'hh:mm:ss'}}</p> -->
+
+<!-- <p>{{spi | number: '2.2-3'}}</p>
+<p>{{object | json}}</p>
+
+<p>{{title}}</p> -->
+
+
+<!-- <p>Today's date: {{date | date: 'fullDate'}}</p>
+<p>Formatted amount: {{amount | currency: 'INR'}}</p>
+<p>Uppercase: {{stuName | uppercase}}</p> 
+<p>Lowercase: {{stuName | lowercase}}</p> 
+<p>Titlecase: {{stuName | titlecase}}</p> 
+<p>Decimal: {{amount | number: '8.3-5'}}</p> -->
+<!-- beofre point min 8 and after point min 3 and max 5 -->
+<!-- <p>Decimal: {{amount | number: '1.0-8'}}</p> -->
+<!-- before point min 1 and after point min 0 and max 8 -->
+<!-- <p>Percent: {{0.78 | percent}}</p>
+<p>JSON: {{object | json}}</p> 
+<p>Slice: {{stuName | slice: 1:7}}</p>  -->
+
+<input type="text" (input)="displayDetail($event)">
+<button (click)="print()">submit</button>
+<button (dblclick)="over($event)">click</button>
+<button (mouseenter)="enter($event)" (mouseleave)="leave($event)">clickhere</button>
+<!-- mouseover
+mouseout
+keypress
+keyup
+keydown -->
+<h1>{{temp}}</h1>
+<app-home></app-home>
+<app-about></app-about>

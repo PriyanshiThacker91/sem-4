@@ -1,0 +1,37 @@
+
+		if(low<high){
+			int i=low;
+	        int j=high+1;
+	        int k=arr[low];
+	        while(flag){
+	        	i++;
+	        
+	        while( i<arr.length &&arr[i]<k){
+	        	i++;
+	        }
+	        j--;
+		
+		while(j>=0 && arr[j]>k ){
+			j--;
+		}
+			if (i<j) {
+				int temp=arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+			}
+			else{
+				flag=false;
+			}
+		}
+		int temp=arr[low];
+		arr[low]=arr[j];
+		arr[j]=temp;
+
+	   quicksort(arr,low,j-1);
+	   quicksort(arr,j+1,high);
+	   }
+}
+// printArray(arr);
+
+}
+	

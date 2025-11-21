@@ -1,0 +1,24 @@
+<form [formGroup]="SignupForm" (ngSubmit)="SignUpuser(SignupForm.value)">
+
+
+    <div class="signup-container">
+        <h2>Signup Form</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required formControlName="username">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required formControlName="email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required formControlName="password">
+
+            <label for="contact">Contact No:</label>
+            <input type="tel" id="contact" name="contact" required formControlName="contactNo">
+
+            <button type="submit" class="btn">Sign Up</button>
+
+            <p class="login-link">Already have an account? <a href="#">Login</a></p>
+
+    </div>
+
+</form>

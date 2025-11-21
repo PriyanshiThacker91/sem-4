@@ -1,0 +1,36 @@
+<div class="container">
+  <h1 class="section-heading">Toggle</h1>
+  <button class="btn btn-primary" (click)="togglevalue()">Toggle</button>
+  <div *ngIf="show; else elseBlock" class="toggle-content">Hello world from Priyanshi!</div>
+  <ng-template #elseBlock>
+    <div class="toggle-content">Hello</div>
+  </ng-template>
+
+  <h1 class="section-heading">Ng Switch</h1>
+  <div class="ng-switch">
+    <div [ngSwitch]="month" class="month-container">
+      <h2 *ngSwitchCase="'1'">January</h2>
+      <h2 *ngSwitchCase="'2'">February</h2>
+      <h2 *ngSwitchCase="'3'">March</h2>
+      <h2 *ngSwitchCase="'4'">April</h2>
+      <h2 *ngSwitchCase="'5'">May</h2>
+      <h2 *ngSwitchCase="'6'">June</h2>
+      <h2 *ngSwitchCase="'7'">July</h2>
+      <h2 *ngSwitchCase="'8'">August</h2>
+      <h2 *ngSwitchCase="'9'">September</h2>
+      <h2 *ngSwitchCase="'10'">October</h2>
+      <h2 *ngSwitchCase="'11'">November</h2>
+      <h2 *ngSwitchCase="'12'">December</h2>
+      <h2 *ngSwitchDefault="">Not a valid month number</h2>
+    </div>
+  </div>
+
+  <h1 class="section-heading">Ng Style</h1>
+  <div [ngStyle]="obj" class="light-container">
+    <button class="btn btn-success" (click)="start()">Start Light</button>
+    <button class="btn btn-danger" (click)="stop()">Stop Light</button>
+  </div>
+
+  <h1 class="section-heading">Ng Class</h1>
+  <h2 [ngClass]="'first third'" class="ng-class-example">Hi! What's up?</h2>
+</div>

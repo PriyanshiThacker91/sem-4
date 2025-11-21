@@ -1,0 +1,123 @@
+<form action="" class="form-content">
+<div>
+    <label for="name">name:</label><br>
+    <input type="text" name="name" (input)="datafill($event)">
+</div>
+<div>
+    <label for="name">enroll no:</label><br>
+    <input type="text" name="enroll" (input)="datafill($event)">
+</div>
+<div>
+    <label for="name">email:</label><br>
+    <input type="text" name="email" (input)="datafill($event)">
+</div>
+<div>
+    <label for="name">sem:</label><br>
+    <input type="text" name="sem" (input)="datafill($event)">
+</div>
+<div>
+    <label for="name">contact:</label><br>
+    <input type="text" name="contact" (input)="datafill($event)">
+</div>
+<div>
+    <label for="name">branch:</label><br>
+    <input type="text" name="branch" (input)="datafill($event)">
+</div>
+<div>
+    <label for="name">current spi:</label><br>
+    <input type="text" name="current spi" (input)="datafill($event)">
+</div>
+<div>
+    <label for="name">city:</label><br>
+    <input type="text" name="city" (input)="datafill($event)">
+</div>
+<div>
+    <label for="name">batch:</label><br>
+    <input type="text" name="batch" (input)="datafill($event)">
+</div>
+<div>
+    <label for="name">roll no:</label><br>
+    <input type="text" name="roll no" (input)="datafill($event)">
+</div>
+</form>
+
+<form (submit)="addproject($event)">
+<div id="main">
+    <label for="name">project_name</label><br>
+    <input type="text" name="project_name" (input)="makeproject($event)">
+</div>
+<div>
+    <label for="name">project_desciption</label><br>
+    <input type="text" name="project_desciption" (input)="makeproject($event)">
+</div>
+<div>
+    <label for="name">project_startdate</label><br>
+    <input type="date" name="project_startdate" (input)="makeproject($event)">
+</div>
+<div>
+    <label for="name">project_enddate</label><br>
+    <input type="date" name="project_enddate" (input)="makeproject($event)">
+</div>
+<div>
+    <input type="submit">
+</div>  
+</form>
+
+<div>
+
+    <table border="2">
+        <tr>
+            <td>project_name</td>
+            <td>project_desciption</td>
+            <td>project_startdate</td>
+            <td>project_enddate</td>
+          
+        </tr>
+        <tr *ngFor="let xyz of student.project" >
+            <td>{{xyz.project_name}}</td>
+            <td>{{xyz.project_desciption}}</td>
+            <td>{{xyz.project_startdate}}</td>
+           <td>{{xyz.project_enddate}}</td>
+        </tr>
+    </table>
+</div>
+
+<form (submit)="addcerti($event)">
+    <div id="main">
+        <label for="name">institute_name</label><br>
+        <input type="text" name="institute_name" (input)="certificate_project($event)">
+    </div>
+    <div>
+        <label for="name">course_name</label><br>
+        <input type="text" name="course_name" (input)="certificate_project($event)">
+    </div>
+    <div>
+        <label for="name">certificate_id</label><br>
+        <input type="text" name="certificate_id" (input)="certificate_project($event)">
+    </div>
+    
+    <div>
+        <input type="submit">
+    </div>  
+    </form>
+    
+    <div>
+    
+        <table border="2">
+            <tr>
+                <td>institute_name</td>
+                <td>course_name</td>
+                <td>certificate_id</td>
+            
+              
+            </tr>
+            <tr *ngFor="let temp of student.certiproject" >
+                <td>{{temp.institute_name}}</td>
+                <td>{{temp.course_name}}</td>
+                <td>{{temp.certificate_id}}</td>
+           
+            </tr>
+        </table>
+    </div>
+
+{{student|json}}

@@ -1,0 +1,214 @@
+/* .form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+    border:2px solid black;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-text-fill-color:darkblue;
+} */
+#main{
+  display: flex;
+}
+.form-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color:aqua;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-content div {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: 600;
+    color:black;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #5b9bd5;
+  }
+  
+  input[type="text"]:hover {
+    border-color:black;
+  }
+  
+  /* Input focus effect */
+  input[type="text"]:focus {
+    border-color: #4e9af1;
+    box-shadow: 0 0 10px rgba(78, 154, 241, 0.2);
+    border-style: dotted;
+  }
+  
+
+  div:last-child {
+    margin-bottom: 0;
+  }
+  
+
+  @media (max-width: 768px) {
+    .form-content {
+      padding: 15px;
+      margin: 20px;
+    }
+  
+    label, input[type="text"] {
+      font-size: 14px;
+    }
+  }
+  
+
+  label {
+    color: #4A4A4A;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5b9bd5;
+    color:brown;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color:chocolate;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fc;
+  padding: 20px;
+}
+
+
+#main {
+  margin-bottom: 15px;
+}
+
+form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="submit"] {
+  background-color:brown;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color:brown;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-size: 16px;
+  color: #333;
+}
+
+table td {
+  font-size: 14px;
+  color: #555;
+}
+
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+
+  form {
+      padding: 15px;
+  }
+
+  table th,
+  table td {
+      padding: 8px;
+      font-size: 12px;
+  }
+
+  input[type="submit"] {
+      font-size: 14px;
+      padding: 10px 15px;
+  }
+}

@@ -1,0 +1,168 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Headings */
+  .section-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  /* Toggle Content */
+  .toggle-content {
+    font-size: 20px;
+    color: #6c757d;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Ng Switch Section */
+  .ng-switch .month-container h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 10px;
+    color: #ff5722;
+    background: #fbe9e7;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .ng-switch .month-container h2:hover {
+    background: #ffcdd2;
+    color: #d32f2f;
+  }
+  
+  /* Light Container */
+  .light-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    background: #e3f2fd;
+    border: 1px solid #bbdefb;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ng Class Example */
+  .ng-class-example {
+    font-size: 22px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Class-Based Styling */
+  .first {
+    background-color: #00bcd4; /* Aqua */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .second {
+    font-size: 18px;
+  }
+  
+  .third {
+    color: #673ab7; /* Blue-Violet */
+    font-weight: bold;
+  }
+  
+  /* Button Styles */
+  /* button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  } */
+  button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Keep consistent padding */
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: auto; /* Set width explicitly to prevent expansion */
+    display: inline-block; /* Ensure the button does not expand to fit parent width */
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrapping inside buttons */
+    width: 120px;
+  }
+  button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  
+  /* .btn-success {
+    background-color: #28a745;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+   */

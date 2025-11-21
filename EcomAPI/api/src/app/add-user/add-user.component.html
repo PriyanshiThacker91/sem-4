@@ -1,0 +1,52 @@
+
+<form [formGroup]="userForm" (ngSubmit)="SaveData()" class="form-container">
+    <h2 class="form-title">User Details</h2>
+    <table class="form-table">
+      <tr>
+        <td class="label">
+          <label for="createdAt">Enter Created At:</label>
+        </td>
+        <td>
+          <input type="text" id="createdAt" formControlName="createdAt" class="form-input" />
+        </td>
+      </tr>
+      <tr>
+        <td class="label">
+          <label for="name">Enter Name:</label>
+        </td>
+        <td>
+          <input type="text" id="name" formControlName="name" class="form-input" />
+        </td>
+      </tr>
+      <tr>
+        <td class="label">
+          <label for="avatar">Enter Avatar:</label>
+        </td>
+        <td>
+          <input type="text" id="avatar" formControlName="avatar" class="form-input" />
+        </td>
+      </tr>
+      <tr>
+        <td class="label">
+          <label for="mobile">Enter Mobile:</label>
+        </td>
+        <td>
+          <input type="text" id="mobile" formControlName="mobile" class="form-input" />
+        </td>
+      </tr>
+      <tr>
+        <td class="label">
+          <label for="email">Enter Email:</label>
+        </td>
+        <td>
+          <input type="text" id="email" formControlName="email" class="form-input" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="submit-container">
+          <button type="submit" class="submit-btn">{{ id ? 'Edit' : 'Add' }}</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+  

@@ -1,0 +1,15 @@
+.card {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+th {
+    width: 30%;
+    background-color: #f8f9fa;
+    text-align: left;
+}
+
+td {
+    text-align: left;
+}

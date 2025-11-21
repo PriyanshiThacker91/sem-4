@@ -1,0 +1,118 @@
+<!-- <form #userform="ngForm">
+    <input type="text" [(ngModel)]="user.username" #username="ngModel" required name="username" placeholder="enter username" minlength="3">
+    <div style="color: red;" *ngIf="username.invalid && username.touched">please enter username</div>
+    <div *ngIf="username.control"></div>
+  
+
+    <input type="text" name="contact" [(ngModel)]="user.contact" #contact="ngModel" pattern="[0-9]{10}" placeholder="enter contact no." required/> 
+    <div style="color: blue;" *ngIf="contact.invalid && contact.touched">please enter contact</div>
+    
+<div>
+    <input type="text" name="email" [(ngModel)]="user.email" #email="ngModel" pattern="[0-9]{10}" placeholder="enter email" required/> 
+    <div style="color:deeppink;" *ngIf="email.invalid && email.touched">please enter email</div>
+</div>
+
+<div>
+    <input type="text" name="spi" [(ngModel)]="user.spi" #spi="ngModel" pattern="[0-9]{3}" placeholder="enter spi" required/> 
+    <div style="color:darkmagenta;" *ngIf="spi.invalid && spi.touched">please enter spi</div>
+</div>
+  
+<div>
+    <input type="text" name="age" [(ngModel)]="user.age" #age="ngModel" pattern="[0-9]{10}" placeholder="enter age" required/> 
+    <div style="color:darkgreen;" *ngIf="age.invalid && age.touched">please enter age</div>
+</div>
+    <div><button type="submit" [disabled]="userform.invalid">submit</button>
+    </div>
+</form>
+<pre>
+    {{user|json}}
+</pre> -->
+
+
+<form #userform="ngForm">
+   
+    <input
+        type="text"
+        [(ngModel)]="user.username"
+        #username="ngModel"
+        name="username"
+        placeholder="Enter username"
+        required
+        minlength="3"
+    />
+    <div style="color: red;" *ngIf="username.invalid && username.touched">
+        Please enter a valid username (minimum 3 characters).
+    </div>
+
+    <div>
+    <input
+        type="text"
+        [(ngModel)]="user.contact"
+        #contact="ngModel"
+        name="contact"
+        placeholder="Enter contact number"
+        required
+        pattern="^[0-9]{10}$"
+    />
+    <div style="color: blue;" *ngIf="contact.invalid && contact.touched">
+        Please enter a valid contact number (10 digits).
+    </div>
+</div>
+   <div>
+    <input
+        email
+        [(ngModel)]="user.email"
+        #email="ngModel"
+        name="email"
+        placeholder="Enter email"
+        required
+    />
+    <div style="color: deeppink;" *ngIf="email.invalid && email.touched">
+        Please enter a valid email address.
+    </div>
+
+</div>
+<div>
+    <input style="width:100px;"
+        type="number"
+        [(ngModel)]="user.spi"
+        #spi="ngModel"
+        name="spi"
+        placeholder="Enter SPI"
+        required
+        min="0"
+        max="10"
+        
+    />
+    <div style="color: darkmagenta;" *ngIf="spi.invalid && spi.touched">
+        Please enter a valid SPI (3 digits).
+    </div>
+
+</div>
+  
+        <div>
+            <input
+                type="number"
+                name="age"
+                [(ngModel)]="user.age"
+                #age="ngModel"
+                min="18"x
+                placeholder="Enter age"
+                required
+            />
+            <div style="color: darkgreen;" *ngIf="age.invalid && age.touched">
+                Please enter a valid age (greater than 18 and up to 25).
+            </div>
+        </div>
+        
+
+    
+
+  
+    <div>
+        <button type="submit" [disabled]="userform.invalid">Submit</button>
+    </div>
+</form>
+
+<pre>{{ user | json }}</pre>
+

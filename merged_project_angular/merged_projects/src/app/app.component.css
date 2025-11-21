@@ -1,0 +1,72 @@
+
+.navbar {
+    background-color: #007bff; /* Primary Blue */
+    color:coral;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:coral;
+  }
+  
+  .navbar-brand:hover {
+    color:darkorange;
+    text-decoration: none;
+  }
+  
+  .nav-link {
+    color:darkmagenta;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover, .active-link {
+    color:darkgreen;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,0.8)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Form Styling */
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .search-input:focus {
+    border-color: #ffdd57;
+    box-shadow: 0 0 5px rgba(255, 221, 87, 0.5);
+  }
+  
+  .search-btn {
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .search-btn:hover {
+    background-color: #218838;
+    color: #f8f9fa;
+  }
+  
+  /* Navbar Shadow */
+  .navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

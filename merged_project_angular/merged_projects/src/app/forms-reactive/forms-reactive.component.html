@@ -1,0 +1,28 @@
+<form [formGroup]="userForm">
+    <input type="text" placeholder="enter userName" formControlName="userName">
+    <br>
+    <span *ngIf="userForm.get('userName')?.invalid && userForm.get('userName')?.touched" style="color: red;">enter valid username</span>
+    <br>
+    <input type="text" placeholder="enter email" formControlName="email">
+    <br>
+    <span *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched" style="color: red;">enter valid email</span>
+    <br>
+    <input type="text" placeholder="enter contact no." formControlName="contact">
+    <br>
+    <span *ngIf="userForm.get('contact')?.invalid && userForm.get('contact')?.touched" style="color: red;">enter valid contact no.</span>
+    <br>
+    
+    <input type="text" placeholder="enter spi" formControlName="spi">
+    <br>
+    <span *ngIf="userForm.get('spi')?.invalid && userForm.get('spi')?.touched" style="color: red;">enter valid spi</span>
+    <br>
+    
+    <input type="text" placeholder="enter enroll no." formControlName="enroll_no">
+    <br>
+    <span *ngIf="userForm.get('enroll_no')?.invalid && userForm.get('enroll_no')?.touched" style="color: red;">enter valid enroll no.</span>
+    <br>
+    
+    <button [disabled]="userForm.invalid" (click)="saveData()">Submit</button>
+    </form>
+    
+    <pre>{{ userForm.value | json }}</pre>

@@ -1,0 +1,86 @@
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/Resume">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/crud-operations">crud-operations</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active" routerLink="/arr_of_objects">
+           arr_of_objects
+          </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/stuctural_directives">stuctural_directives</a>
+          </li>
+         
+        
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet> -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MyWebsite</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Resume" routerLinkActive="active-link">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/crud-operations" routerLinkActive="active-link">CRUD Operations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/arr_of_objects" routerLinkActive="active-link">Array of Objects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/stuctural_directives" routerLinkActive="active-link">Structural Directives</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/validation" routerLinkActive="active-link">template_driven_form</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/reactiveForms" routerLinkActive="active-link">Reactive_Forms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/forms-reactive" routerLinkActive="active-link">reactiveForms_Builder</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/SignupForm" routerLinkActive="active-link">Signup-Form</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login-form" routerLinkActive="active-link">login-form</a>
+        </li>
+        <div class="nav-item">
+         
+      
+          <button class="btn-logout" (click)="logout()">Logout</button>
+      </div>
+      
+      </ul>
+      <!-- <form class="d-flex search-form">
+        <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-success search-btn" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

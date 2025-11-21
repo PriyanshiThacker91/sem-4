@@ -1,0 +1,16 @@
+--Part – A
+--1. Retrieve a unique genre of songs.
+
+--2. Find top 2 albums released before 2010.
+--3. Insert Data into the Songs Table. (1245, ‘Zaroor’, 2.55, ‘Feel good’, 1005)
+--4. Change the Genre of the song ‘Zaroor’ to ‘Happy’
+--5. Delete an Artist ‘Ed Sheeran’
+--6. Add a New Column for Rating in Songs Table. [Ratings decimal(3,2)]
+--7. Retrieve songs whose title starts with 'S'.
+--8. Retrieve all songs whose title contains 'Everybody'.
+--9. Display Artist Name in Uppercase.
+--10. Find the Square Root of the Duration of a Song ‘Good Luck’
+--11. Find Current Date.
+--12. Find the number of albums for each artist.
+--13. Retrieve the Album_id which has more than 5 songs in it.
+--14. Retrieve all songs from the album 'Album1'. (using Subquery)

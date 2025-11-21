@@ -1,0 +1,33 @@
+<button (click)="togglevalue()">Toggle</button>
+<div *ngIf="show; else elseBlock">hello world from priyanshi</div>
+<div>
+<ng-template #elseBlock>hello</ng-template>
+</div>
+<div [ngSwitch]="month">
+  <h1 *ngSwitchCase="'1'">January</h1>
+  <h1 *ngSwitchCase="'2'">february</h1>
+  <h1 *ngSwitchCase="'3'">march</h1>
+  <h1 *ngSwitchCase="'4'">april</h1>
+  <h1 *ngSwitchCase="'5'">may</h1>
+  <h1 *ngSwitchCase="'6'">june</h1>
+  <h1 *ngSwitchCase="'7'">july</h1>
+  <h1 *ngSwitchCase="'8'">august</h1>
+  <h1 *ngSwitchCase="'9'">september</h1>
+  <h1 *ngSwitchCase="'10'">october</h1>
+  <h1 *ngSwitchCase="'11'">november</h1>
+  <h1 *ngSwitchCase="'12'">december</h1>
+
+  <h1 *ngSwitchDefault="">not a valid month number</h1>
+  <h1 [ngStyle]="mycolor">hiiiii</h1>
+
+
+  <div [ngStyle]="obj">
+
+    <button (click)="start()">start light</button>
+    <button (click)="stop()">stop light</button>
+
+  </div>
+
+  <!-- <h1 [ngClass]="'{'first':, 'third':}'">hi!whatsup??</h1> -->
+  <h1 [ngClass]="'first third'">hi!whatsup??</h1>
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+  
+  <button class="btn btn-danger" routerLink="/users/add">Add</button>
+    
+    <div class="row">
+      <div class="card col-2" style="width: 18rem;" *ngFor="let stu of arr">
+        <img src="{{stu.avatar}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{stu.name}}</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a class="btn btn-primary">{{stu.createdAt}}</a>
+          <br>
+          <div class="d-flex gap-2 mt-2">
+            <button (click)="gotodetails(stu.id)" class="btn btn-primary">Show More</button>
+            <button class="btn btn-danger" (click)="delete(stu.id)">Delete</button>
+            <button class="btn btn-secondary" routerLink="/users/edit/{{stu.id}}">Edit</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

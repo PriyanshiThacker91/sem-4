@@ -1,0 +1,26 @@
+<table class="table">
+  <thead>
+    <tr>
+
+      <th scope="col">name</th>
+      <!-- <th scope="col">grade obtained</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <input type="text" placeholder="enter name"  class="form-control" [(ngModel)]="textfieldvalue">
+      <input type="button" [value]="storevalue" class="btn btn-primary" (click)="addstu()">
+      <input type="text" placeholder="Search" class="form-control mt-2" [(ngModel)]="searchStu" (keyup)="searchfield($event)">
+
+    </tr>
+
+    <tr *ngFor="let temp of stu; let i = index">
+      <td>{{temp}}</td>
+      <input type="button" value="delete" class="btn btn-warning" (click)="deletestu(i)">
+      <input type="button" value="edit" class="btn btn-danger" (click)="updatestu(i)">  
+    </tr>
+
+
+
+  </tbody>
+</table>
